@@ -1,0 +1,21 @@
+"EyeRefract"
+{
+ $Iris               "models/theforgottenarchitect/codaw/irons/eyeball_iris"    // Iris color in RGB with cornea noise in A
+ $AmbientOcclTexture "models/theforgottenarchitect/codaw/irons/eye_ao"      // Ambient occlusion in RGB, A unused // default texture eyeball_l_ambient 
+ $Envmap             "models/theforgottenarchitect/codaw/irons/eye-reflection-cubemap-"    // Reflection environment map
+ $CorneaTexture      "models/theforgottenarchitect/codaw/irons/eye-cornea"                 // Special texture that has 2D cornea normal in RG and other data in BA
+
+ $EyeballRadius "0.54591"    // Default 0.5
+ $AmbientOcclColor "[0.36 0.25 0.2]" // Default 0.33, 0.33, 0.33
+ $Dilation "0.4"     // Default 0.5
+ $Glossiness "1"     // Glossiness of eye (1 is default, 0 is not glossy at all)
+ $ParallaxStrength "0.30"          // Default 0.25
+ $CorneaBumpStrength "1.0"   // Default 1.0
+
+ $halflambert "1"
+ $nodecal "1"
+
+ // These effects are only available in ps.2.0b and later
+ $RaytraceSphere "1"    // Default 1 - Enables raytracing in the pixel shader to make the eyeball look round
+ $SphereTexkillCombo "1"   // Default 1 - Enables killing pixels that don't ray-intersect the sphere
+}
